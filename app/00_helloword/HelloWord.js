@@ -3,7 +3,8 @@ import {
     StyleSheet,
     Text,
     View,
-    Image
+    Image,
+    SafeAreaView,
 } from 'react-native';
 
 export default class HelloWord extends Component {
@@ -13,13 +14,15 @@ export default class HelloWord extends Component {
     }
 
     componentDidMount() {
-
     }
     render() {
         return (
-            <View style={styles.container}>
-                <Text>helo二维微微儿o </Text>
-            </View>
+            <SafeAreaView>
+                <View style={styles.container}>
+                    <Text>hello word  </Text>
+                </View>
+            </SafeAreaView>
+
         );
     };
 }
@@ -27,7 +30,7 @@ export default class HelloWord extends Component {
 const styles = StyleSheet.create({
 
         container: {
-            backgroundColor: 'red',
+            backgroundColor: 'yellow',
             margin: 20,
         },
 

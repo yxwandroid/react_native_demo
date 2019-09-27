@@ -1,26 +1,33 @@
 import React, {Component} from 'react';
+import Item from './Item';
+import Likes from './Likes';
 import {
     StyleSheet,
-    Text,
     View,
-    Image
+    SafeAreaView,
 } from 'react-native';
 
-export default class HelloWord extends Component {
+
+export default class ComponentDemo extends Component {
 
 
     constructor(props) {
-      super(props);
-      this.state = {};
+        super(props);
+        this.state = {};
     }
 
     componentDidMount() {
 
     }
+
     render() {
         return (
+            <SafeAreaView>
             <View style={styles.container}>
+                <Item/>
+                <Likes/>
             </View>
+            </SafeAreaView>
         );
     };
 }

@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {
     Text,
     View,
+    SafeAreaView
 } from 'react-native'
 
 /**
@@ -15,7 +16,11 @@ export  default class CountDown extends Component {
     render() {
         const {count} = this.state;
         return (
-            <Text>{count}</Text>
+            <SafeAreaView>
+
+                <Text>{count}</Text>
+            </SafeAreaView>
+
         )
     }
 

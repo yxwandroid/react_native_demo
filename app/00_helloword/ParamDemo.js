@@ -6,7 +6,7 @@ import {
     Image
 } from 'react-native';
 
-export default class HelloWord extends Component {
+export default class ParamDemo extends Component {
 
 
     static  staticObjec="静态成员变量"  //使用类名进行调用
@@ -29,8 +29,8 @@ export default class HelloWord extends Component {
         return (
             <View style={styles.container}>
                 <Text style={styles.text}>{this.name}</Text>
-                <Text style={styles.text}>{HelloWord.staticObjec}</Text>
-                <Text style={styles.text}>{HelloWord.staticMethod()}</Text>
+                <Text style={styles.text}>{ParamDemo.staticObjec}</Text>
+                <Text style={styles.text}>{ParamDemo.staticMethod()}</Text>
             </View>
         );
     };

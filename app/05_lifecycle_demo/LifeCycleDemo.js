@@ -5,9 +5,7 @@ import {
     View,
     Image
 } from 'react-native';
-//reference  https://race604.com/react-native-component-lifecycle/
 
-// noinspection JSAnnotator
 export default class LifeCycleDemo extends Component<{}> {
 
     constructor(props) {
