@@ -23,4 +23,4 @@ import LifeCycleDemo from './app/05_lifecycle_demo/LifeCycleDemo';
 //     Profile: {screen: HelloWord},
 // });
 
-AppRegistry.registerComponent(appName, () =>LifeCycleDemo );
+AppRegistry.registerComponent(appName, () =>HelloWord );
